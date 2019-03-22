@@ -1,1 +1,24 @@
-tite.app
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tite.app</title>
+  </head>
+  <body>
+    Tite.app
+    <script>
+      var script = document.createElement('script')
+      script.src = 'https://js.studio1.io/studio1.js'
+      script.async = true
+      script.onload = function() {
+        var studio1 = new Studio1('2576da5b-39de-4b62-a957-67a7ed3ac86d')
+        studio1.identify('1234567890', {
+          name: '<NAME>',
+          email: '<EMAIL>',
+          signedUpAt: '<SIGNED_UP_AT>'
+        })
+      }
+      document.head.appendChild(script)
+    </script>
+  </body>
+</html>
